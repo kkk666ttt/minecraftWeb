@@ -1,0 +1,92 @@
+[
+  {
+    "id": "act-001",
+    "title": "🎉 五一假期双倍经验活动",
+    "date": "2026-05-01",
+    "type": "活动",
+    "priority": "high",
+    "pinned": true,
+    "expired": false,
+    "content": "五一劳动节期间（5月1日~5月5日），全服开启双倍经验！所有mcMMO技能经验×2，等级提升速度翻倍，快来冲刺排行榜吧！",
+    "author": "DreamMaster",
+    "images": [
+      {
+        "url": "assets/images/act-double-exp.png",
+        "alt": "双倍经验活动海报",
+        "caption": "五一限定双倍经验活动"
+      }
+    ],
+    "link": null
+  },
+  {
+    "id": "act-002",
+    "title": "🏗️ 第一届建筑大赛报名开始",
+    "date": "2026-04-28",
+    "type": "比赛",
+    "priority": "high",
+    "pinned": true,
+    "expired": false,
+    "content": "主题：「幻想城堡」 报名时间：4月28日~5月10日，奖励：第一名获得「建筑大师」称号 + 50000游戏币，第二名30000游戏币，第三名10000游戏币。使用 /warp contest 查看场地！",
+    "author": "DreamMaster",
+    "images": [],
+    "link": null
+  },
+  {
+    "id": "act-003",
+    "title": "🛠️ 服务器维护公告",
+    "date": "2026-04-30",
+    "type": "公告",
+    "priority": "normal",
+    "pinned": false,
+    "expired": true,
+    "content": "本周四凌晨2:00~4:00服务器将进行例行维护，更新插件版本和优化性能。届时服务器将暂时关闭，请各位玩家提前下线。",
+    "author": "管理员",
+    "images": [],
+    "link": null
+  },
+  {
+    "id": "act-004",
+    "title": "💎 新增玩家商店街区",
+    "date": "2026-04-25",
+    "type": "更新",
+    "priority": "normal",
+    "pinned": false,
+    "expired": false,
+    "content": "主城新增玩家商店街区！现在你可以使用 /shop rent 租用商店摊位，出售你的物品给其他玩家。前10名租用者享受5折优惠！",
+    "author": "DreamMaster",
+    "images": [],
+    "link": null
+  },
+  {
+    "id": "act-005",
+    "title": "📢 服务器QQ群火热招募中",
+    "date": "2026-04-20",
+    "type": "公告",
+    "priority": "low",
+    "pinned": true,
+    "expired": false,
+    "content": "DreamCraft玩家交流群持续纳新！加群可与小伙伴组队冒险、交流经验、反馈建议。群号请查看网站「交流Q群」页面~",
+    "author": "管理员",
+    "images": [],
+    "link": null
+  },
+  {
+    "id": "act-006",
+    "title": "🎆 新年烟花秀回顾",
+    "date": "2026-01-01",
+    "type": "活动回顾",
+    "priority": "low",
+    "pinned": false,
+    "expired": true,
+    "content": "回顾一下我们精彩的跨年烟花秀活动！感谢所有参与的玩家，漫天的烟花照亮了整个主城，留下了美好的回忆。期待今年的更多精彩活动！",
+    "author": "DreamMaster",
+    "images": [
+      {
+        "url": "assets/images/act-firework-show.jpg",
+        "alt": "新年烟花秀",
+        "caption": "2026年跨年夜烟花秀盛况"
+      }
+    ],
+    "link": null
+  }
+]

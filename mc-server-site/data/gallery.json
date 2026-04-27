@@ -1,0 +1,112 @@
+[
+  {
+    "id": "gallery-001",
+    "src": "assets/images/gallery/spawn-city.jpg",
+    "thumbnail": "assets/images/gallery/spawn-city.jpg",
+    "title": "🏰 主城全景",
+    "description": "DreamCraft 服务器主城，由玩家 DreamMaster 和 Steve_Builder 共同建造。",
+    "author": "DreamMaster",
+    "date": "2026-04-20",
+    "tags": ["建筑", "主城"],
+    "featured": true
+  },
+  {
+    "id": "gallery-002",
+    "src": "assets/images/gallery/group-photo.jpg",
+    "thumbnail": "assets/images/gallery/group-photo.jpg",
+    "title": "👥 玩家大合照",
+    "description": "服务器开放日活动，30位玩家在主城合影留念。",
+    "author": "RedStone_Craft",
+    "date": "2026-04-15",
+    "tags": ["活动", "合照"],
+    "featured": true
+  },
+  {
+    "id": "gallery-003",
+    "src": "assets/images/gallery/build-contest.jpg",
+    "thumbnail": "assets/images/gallery/build-contest.jpg",
+    "title": "🏗️ 建筑大赛作品",
+    "description": "第一届建筑大赛冠军作品——「天空之城」，由玩家 Sky_Island_Fan 耗时两周建造。",
+    "author": "Sky_Island_Fan",
+    "date": "2026-04-10",
+    "tags": ["建筑", "比赛"],
+    "featured": true
+  },
+  {
+    "id": "gallery-004",
+    "src": "assets/images/gallery/nether-fortress.jpg",
+    "thumbnail": "assets/images/gallery/nether-fortress.jpg",
+    "title": "🔥 下界要塞探险",
+    "description": "玩家 Nether_Warrior 带领小队探索下界要塞，成功击败烈焰人并取得烈焰棒。",
+    "author": "Nether_Warrior",
+    "date": "2026-04-05",
+    "tags": ["探险", "下界"],
+    "featured": false
+  },
+  {
+    "id": "gallery-005",
+    "src": "assets/images/gallery/ender-dragon.jpg",
+    "thumbnail": "assets/images/gallery/ender-dragon.jpg",
+    "title": "🐉 末影龙首杀",
+    "description": "服务器首次击杀末影龙！8位勇士齐心协力，完成了 DreamCraft 的屠龙壮举。",
+    "author": "Enderman_Hunter",
+    "date": "2026-03-28",
+    "tags": ["活动", "战斗", "末地"],
+    "featured": true
+  },
+  {
+    "id": "gallery-006",
+    "src": "assets/images/gallery/firework-show.jpg",
+    "thumbnail": "assets/images/gallery/firework-show.jpg",
+    "title": "🎆 新年烟花秀",
+    "description": "跨年夜服务器举办的烟花大会，漫天烟花照亮了整个主城。",
+    "author": "DreamMaster",
+    "date": "2026-01-01",
+    "tags": ["活动", "节日"],
+    "featured": false
+  },
+  {
+    "id": "gallery-007",
+    "src": "assets/images/gallery/redstone-machine.jpg",
+    "thumbnail": "assets/images/gallery/redstone-machine.jpg",
+    "title": "⚙️ 红石自动农场",
+    "description": "RedStone_Craft 设计的全自动南瓜/西瓜农场，每小时产量高达1000+。",
+    "author": "RedStone_Craft",
+    "date": "2026-03-15",
+    "tags": ["红石", "科技"],
+    "featured": false
+  },
+  {
+    "id": "gallery-008",
+    "src": "assets/images/gallery/underwater-base.jpg",
+    "thumbnail": "assets/images/gallery/underwater-base.jpg",
+    "title": "🌊 海底神殿改造",
+    "description": "Ocean_Explorer 将一座海底神殿改造成了水下基地，并铺设了海底玻璃隧道。",
+    "author": "Ocean_Explorer",
+    "date": "2026-02-20",
+    "tags": ["建筑", "水下"],
+    "featured": false
+  },
+  {
+    "id": "gallery-009",
+    "src": "assets/images/gallery/minigame-arena.jpg",
+    "thumbnail": "assets/images/gallery/minigame-arena.jpg",
+    "title": "🎯 小游戏赛场",
+    "description": "服务器新建的PVP小游戏场地，支持多人对战，每周六晚举办比赛。",
+    "author": "管理员",
+    "date": "2026-04-22",
+    "tags": ["玩法", "PVP"],
+    "featured": false
+  },
+  {
+  "id": "gallery-010",
+  "src": "assets/images/gallery/selectedMoments/gallery-home.png",
+  "thumbnail": "assets/images/gallery/selectedMoments/gallery-home.png",
+  "title": "🌄 世界出生点！",
+  "description": "服务器所有玩家的出生点！。",
+  "author": "管理员",
+  "date": "2026-04-28",
+  "tags": ["探险", "出生点"],
+  "featured": true
+  }
+]

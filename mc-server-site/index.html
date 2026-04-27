@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamCraft 我的世界服务器</title>
+  <link rel="stylesheet" href="css/style.css?v=20260427e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛏️</text></svg>">
+  <meta name="description" content="DreamCraft 我的世界 Paper 服务器，纯净生存、RPG技能、科技拓展">
+</head>
+<body>
+
+  <!-- 移动端菜单按钮 -->
+  <button class="mobile-menu-btn" id="menu-toggle" aria-label="菜单">☰</button>
+
+  <!-- ==================== 侧边栏 ==================== -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <span class="logo-icon">⛏️</span>
+        <h1>DreamCraft</h1>
+      </div>
+      <div class="sidebar-subtitle">Minecraft 1.21.11 丨 Paper 服务端</div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <!-- 由 JS 动态生成 -->
+    </nav>
+
+    <!-- 活动通知区域（侧边栏底部折叠区） -->
+    <div class="sidebar-activities" id="sidebar-activities">
+      <div class="activities-header" onclick="toggleActivitiesPanel()">
+        <span>📢 活动通知</span>
+        <span class="activities-badge" id="activities-badge" style="display:none;">0</span>
+        <span class="activities-toggle" id="activities-toggle">▼</span>
+      </div>
+      <div class="activities-body" id="activities-body">
+        <!-- 由 JS 动态渲染 -->
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="server-status">
+        <span class="status-dot"></span>
+        <span>服务器在线</span>
+      </div>
+      <div>© 2026 DreamCraft. All rights reserved.</div>
+    </div>
+
+    <!-- 主题切换按钮 -->
+    <div class="sidebar-theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="切换主题">🌙</div>
+  </aside>
+
+  <!-- 折叠手柄（独立于侧边栏外部） -->
+  <div class="sidebar-collapse-btn" id="sidebar-collapse" title="折叠侧边栏">◀</div>
+
+  <!-- ==================== 主内容区 ==================== -->
+  <main class="main-content" id="app">
+
+    <!-- 首页 -->
+    <section class="page active" id="page-home">
+      <div id="home-content"></div>
+    </section>
+
+    <!-- 插件列表 -->
+    <section class="page" id="page-plugins">
+      <div id="plugins-content"></div>
+    </section>
+
+    <!-- 文档 -->
+    <section class="page" id="page-docs">
+      <div id="docs-content"></div>
+    </section>
+
+    <!-- QQ群 -->
+    <section class="page" id="page-qq-group">
+      <div id="qqgroup-content"></div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="page" id="page-about">
+      <div id="about-content"></div>
+    </section>
+
+    <!-- 活动通知详情页 -->
+    <section class="page" id="page-activities">
+      <div id="activities-content"></div>
+    </section>
+
+    <!-- 游戏画廊 -->
+    <section class="page" id="page-gallery">
+      <div id="gallery-content"></div>
+    </section>
+
+    <!-- 更新日志 -->
+    <section class="page" id="page-changelog">
+      <div id="changelog-content"></div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 插件详情模态框 ==================== -->
+  <div class="modal-overlay" id="plugin-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="plugin-modal-title">插件详情</h3>
+        <button class="modal-close" onclick="closePluginModal()">✕</button>
+      </div>
+      <div class="modal-body" id="plugin-modal-body">
+        <!-- 动态渲染 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 通行证验证模态框 ==================== -->
+  <div class="modal-overlay" id="access-modal">
+    <div class="modal-content" style="max-width:420px;">
+      <div class="modal-header">
+        <h3>🔑 通行证验证</h3>
+        <button class="modal-close" onclick="closeAccessModal()">✕</button>
+      </div>
+      <div class="modal-body" style="text-align:center;padding:32px 24px;">
+        <div style="font-size:48px;margin-bottom:16px;">🛡️</div>
+        <p style="color:var(--text-secondary);margin-bottom:8px;">服务器IP仅对通过验证的玩家可见</p>
+        <p style="color:var(--text-muted);font-size:13px;margin-bottom:24px;">请输入从管理员处获取的通行证密码</p>
+        <input type="password" id="access-password-input" class="search-box" style="width:100%;text-align:center;font-size:16px;letter-spacing:4px;margin-bottom:12px;" placeholder="请输入通行证密码" autocomplete="off">
+        <div id="access-error" style="color:var(--accent-red);font-size:13px;min-height:20px;margin-bottom:12px;"></div>
+        <button class="btn btn-primary" onclick="verifyAccess()" style="width:100%;justify-content:center;">
+          🔓 验证通行证
+        </button>
+        <p style="color:var(--text-muted);font-size:12px;margin-top:16px;">💡 还没有密码？加QQ群联系管理员获取</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 规则确认弹窗 ==================== -->
+  <div class="modal-overlay" id="rules-modal" style="z-index:500;">
+    <div class="modal-content" style="max-width:560px;">
+      <div class="modal-header"><h3>⚖️ 服务器规则确认</h3></div>
+      <div class="modal-body" style="padding:28px 24px;">
+        <div style="text-align:center;font-size:48px;margin-bottom:12px;">📜</div>
+        <p style="text-align:center;color:var(--text-secondary);margin-bottom:20px;">在访问 DreamCraft 网站与服务器之前，请确认你已阅读并同意以下规则</p>
+        <div style="background:var(--bg-primary);border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:20px;max-height:260px;overflow-y:auto;">
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;margin-bottom:8px;"><strong style="color:var(--accent-red);">🚫 禁止行为</strong></p>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;">• 使用作弊客户端、光影辅助工具、连点器等外挂</p>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;">• 恶意破坏他人建筑（熊孩子行为）</p>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;">• 刷屏、辱骂、骚扰其他玩家</p>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;">• 恶意卡服、利用漏洞获取利益</p>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;">• 建造涉及政治、色情等违规内容</p>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.8;">• 在公共频道发布广告</p>
+        </div>
+        <div style="display:flex;gap:12px;justify-content:center;">
+          <button class="btn btn-primary" onclick="acceptRules()" style="justify-content:center;">✅ 我已知晓并同意</button>
+          <button class="btn btn-outline" onclick="declineRules()" style="justify-content:center;">❌ 拒绝离开</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 加载进度条 ==================== -->
+  <div class="loading-bar" id="loading-bar"></div>
+
+  <!-- ==================== 图片查看器 ==================== -->
+  <div class="modal-overlay image-viewer-overlay" id="image-viewer" onclick="closeImageViewer()">
+    <div class="image-viewer-container" onclick="event.stopPropagation()">
+      <button class="image-viewer-close" onclick="closeImageViewer()">✕</button>
+      <img class="image-viewer-img" src="" alt="">
+      <div class="image-viewer-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==================== 画廊查看器 ==================== -->
+  <div class="modal-overlay gallery-viewer-overlay" id="gallery-viewer" onclick="closeGalleryViewer()">
+    <div class="gallery-viewer-container" onclick="event.stopPropagation()">
+      <button class="gallery-viewer-close" onclick="closeGalleryViewer()">✕</button>
+      <div class="gallery-viewer-top">
+        <button class="gallery-nav-btn" id="gallery-prev-btn" onclick="galleryPrev()">‹</button>
+        <div class="gallery-viewer-img-wrap">
+          <img id="gallery-viewer-img" src="" alt="">
+          <div class="gallery-zoom-tools">
+            <button class="gallery-zoom-btn" type="button" onclick="galleryZoomOut()" title="缩小">−</button>
+            <button class="gallery-zoom-btn" type="button" onclick="galleryResetZoom()" title="重置">100%</button>
+            <button class="gallery-zoom-btn" type="button" onclick="galleryZoomIn()" title="放大">+</button>
+          </div>
+        </div>
+        <button class="gallery-nav-btn" id="gallery-next-btn" onclick="galleryNext()">›</button>
+      </div>
+      <div class="gallery-viewer-info">
+        <div class="gallery-viewer-title" id="gallery-viewer-title"></div>
+        <span class="gallery-viewer-counter" id="gallery-counter"></span>
+        <div class="gallery-viewer-desc" id="gallery-viewer-desc"></div>
+        <div class="gallery-viewer-meta" id="gallery-viewer-author"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js?v=20260427"></script>
+  <script src="js/modules/core.js?v=20260427"></script>
+  <script src="js/modules/router.js?v=20260427"></script>
+  <script src="js/modules/home.js?v=20260427"></script>
+  <script src="js/modules/plugins.js?v=20260427"></script>
+  <script src="js/modules/docs.js?v=20260427"></script>
+  <script src="js/modules/qq-about.js?v=20260427"></script>
+  <script src="js/modules/activities.js?v=20260427"></script>
+  <script src="js/modules/gallery.js?v=20260427h"></script>
+  <script src="js/modules/changelog.js?v=20260427"></script>
+  <script src="js/modules/init.js?v=20260427"></script>
+</body>
+</html>

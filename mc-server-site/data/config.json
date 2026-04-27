@@ -1,0 +1,28 @@
+{
+  "name": "DreamCraft 服务器",
+  "version": "1.0.0",
+  "mcVersion": "1.21.11",
+  "serverType": "Paper",
+  "serverIp": "play.dreamcraft.com",
+  "serverIpHidden": true,
+  "accessPassword": "admin123",
+  "qqGroup": "123456789",
+  "qqGroupLink": "https://qm.qq.com/q/example",
+  "features": [
+    "纯净原版生存体验",
+    "完善的商店经济",
+    "领地保护系统",
+    "可tpa的好友系统",
+    "8~24时稳定运行"
+  ],
+  "navigation": [
+    { "id": "home", "label": "🏠 首页", "icon": "home" },
+    { "id": "plugins", "label": "🔌 插件列表", "icon": "puzzle" },
+    { "id": "docs", "label": "📚 服务器文档", "icon": "book" },
+    { "id": "activities", "label": "📢 活动通知", "icon": "megaphone" },
+    { "id": "qq-group", "label": "💬 交流Q群", "icon": "chat" },
+    { "id": "changelog", "label": "📋 更新日志", "icon": "list" },
+    { "id": "gallery", "label": "📸 游戏画廊", "icon": "image" },
+    { "id": "about", "label": "💖 关于/想说的话", "icon": "heart" }
+  ]
+}
