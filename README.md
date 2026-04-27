@@ -2,42 +2,43 @@
 
 为你的我的世界小服务器搭建一个静态网站吧！
 
-前往https://github.com/kkk666ttt/minecraftWeb/tree/main/mc-server-site下载所有文件，并阅读README.md...
+前往 https://github.com/kkk666ttt/minecraftWeb/tree/main/mc-server-site  下载所有文件，并阅读README.md...
 
 ## 网站演示
-- 首页
+
+- **首页**
   这是网站首页，滑动鼠标滚轮有更丰富的内容，以及能够输入管理员给出的密码获取MC服务器地址，适合与信任的人(同学、朋友等)一起游玩
 ![](./picture/head.png)
 
-- 插件
+- **插件**
   这是服务器所使用的插件展示
 ![](./picture/plugin_head.png)
 
   这里告知玩家可以如何使用插件
 ![](./picture/plugin_details.png)
 
-- 服务器文档
+- **服务器文档**
   这是服务器文档，你可以自定义仍和内容，就像写一篇说明文档
 ![](./picture/server_doc.png)
 
-- 活动通知
+- **活动通知**
   这里是活动通知区域，可以发布你组织的活动或者重要通知！并且有常驻/最新/过期三个类别，方便管理
 ![](./picture/activities.png)
 
-- 交流Q群
+- **交流Q群**
   你可以提供一个QQ群供玩家进入、交流，一起营造一个美好的MC服务器社区
 ![](./picture/QQ.png)
 
-- 更新日志
+- **更新日志**
   这里可以按需要发布游戏服务器更新内容(插件、玩法)、也可以发布网站更新内容！
 ![](./picture/logs.png)
 
-- 游戏画廊
+- **游戏画廊**
   这里能够展现服务器玩家们的风采、在游玩过程中遇到的美丽风景...
   总之，只要你想，都能给图片打上标签并且发布！(只能网页管理员发布~)
 ![](./picture/gallery.png)
 
-- 关于/想说的话
+- **关于/想说的话**
   这里可以发布你想对所有玩家说的话～
 ![](./picture/about.png)
 
