@@ -1,13 +1,46 @@
 [
   {
-  "id": "gallery-001",
-  "src": "assets/images/gallery/selectedMoments/gallery-home.png",
-  "thumbnail": "assets/images/gallery/selectedMoments/gallery-home.png",
-  "title": "🌄 世界出生点！",
-  "description": "服务器所有玩家的出生点！。",
-  "author": "管理员",
-  "date": "2026-04-28",
-  "tags": ["探险", "出生点"],
-  "featured": true
+    "id": "gallery-001",
+    "src": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "thumbnail": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "title": "🌄 世界出生点",
+    "description": "服务器所有玩家的出生点",
+    "author": "管理员",
+    "date": "2026-04-28",
+    "tags": ["探险", "出生点"],
+    "featured": true
+  },
+  {
+    "id": "gallery-002",
+    "src": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "thumbnail": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "title": "🏗️ 建筑大赛现场",
+    "description": "春季建筑大赛火热进行中",
+    "author": "DreamMaster",
+    "date": "2026-04-25",
+    "tags": ["建筑", "活动"],
+    "featured": false
+  },
+  {
+    "id": "gallery-003",
+    "src": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "thumbnail": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "title": "⚔️ 下界探险队",
+    "description": "五人小队深入下界要塞",
+    "author": "Steve",
+    "date": "2026-04-20",
+    "tags": ["探险", "下界"],
+    "featured": false
+  },
+  {
+    "id": "gallery-004",
+    "src": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "thumbnail": "assets/images/gallery/selectedMoments/gallery-home.png",
+    "title": "🎣 钓鱼大赛",
+    "description": "谁是最强钓鱼王",
+    "author": "Alex",
+    "date": "2026-04-15",
+    "tags": ["活动", "比赛"],
+    "featured": false
   }
 ]

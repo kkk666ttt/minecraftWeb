@@ -7,13 +7,7 @@
     "description":"照明插件，提供各种照明效果和功能",
     "author":"LightUP Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/lightup", "desc": "基础点亮" },
-      { "cmd": "/lightup undo", "desc": "撤销上一次操作" },
-      { "cmd": "/lightup cancel", "desc": "停止当前点亮" },
-      { "cmd": "/lightup reload", "desc": "(管理员)重载配置" }
-    ],
-    "usage": "### LightUP 使用指南\n\n https://hangar.papermc.io/LOOHP/LightUp \n\nLightUP 是一个提供各种照明效果和功能的插件。\n\n [管理员]需要安装的API：CommandAPI 11.2.0 \n\n 下载链接：[https://cdn.modrinth.com/data/ExxvCi0y/versions/wtbh8UEY/CommandAPI-11.2.0-Paper.jar]"
+    "path": "docs/plugins/lightup.md"
   },
   {
     "id":"HuskHomes",
@@ -23,12 +17,7 @@
     "description":"家庭系统插件，提供设置和管理家庭的功能",
     "author":"HuskHomes Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/home", "desc": "传送到家" },
-      { "cmd": "/sethome", "desc": "设置家的位置" },
-      { "cmd": "/delhome", "desc": "删除家" }
-    ],
-    "usage": "### HuskHomes 使用指南\n\nHuskHomes 是一个提供家庭系统功能的插件。\n\n#### 🏠 家庭相关\n- 使用 `/sethome` 设置你自己的家（最多可设置多个家）\n- 使用 `/home [名称]` 传送到设置的家\n- 使用 `/delhome [名称]` 删除指定的家"
+    "path": "docs/plugins/huskhomes.md"
   },
   {
     "id":"GSit",
@@ -38,10 +27,7 @@
     "description":"坐下插件，提供玩家坐下功能",
     "author":"GSit Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/sit", "desc": "坐下" }
-    ],
-    "usage": "### GSit 使用指南\n\nGSit 是一个提供玩家坐下功能的插件。\n\n#### 🪑 坐下相关\n- 使用 `/sit` 可以坐下"
+    "path": "docs/plugins/gsit.md"
   },
   {
     "id":"voicechat",
@@ -51,10 +37,7 @@
     "description":"语音聊天插件，提供玩家语音交流功能",
     "author":"VoiceChat Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/voicechat", "desc": "打开语音聊天界面" }
-    ],
-    "usage": "### VoiceChat 使用指南\n\nVoiceChat 是一个提供玩家语音交流功能的插件。\n\n#### 🎤 语音聊天相关\n- 使用 `/voicechat` 可以打开语音聊天界面"
+    "path": "docs/plugins/voicechat.md"
   },
   {
     "id":"OnePlayerSleep",
@@ -64,10 +47,7 @@
     "description":"单个玩家睡觉插件，提供玩家睡觉功能",
     "author":"OnePlayerSleep Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/sleep", "desc": "睡觉" }
-    ],
-    "usage": "### OnePlayerSleep 使用指南\n\nOnePlayerSleep 是一个提供玩家睡觉功能的插件。\n\n#### 🛏️ 睡觉相关\n- 使用 `/sleep` 可以睡觉"
+    "path": "docs/plugins/oneplayersleep.md"
   },
   {
     "id":"AxGraves",
@@ -77,10 +57,7 @@
     "description":"墓碑插件，提供玩家死亡后生成墓碑的功能",
     "author":"AxGraves Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/graves", "desc": "查看墓碑" }
-    ],
-    "usage": "### AxGraves 使用指南\n\nAxGraves 是一个提供玩家死亡后生成墓碑功能的插件。\n\n#### ⚰️ 墓碑相关\n- 玩家死亡后会在死亡地点生成一个墓碑，里面存放玩家的物品\n- 使用 `/graves` 可以查看附近的墓碑"
+    "path": "docs/plugins/axgraves.md"
   },
   {
     "id":"DamageIndicator",
@@ -90,10 +67,7 @@
     "description":"伤害指示器插件，提供玩家受到伤害时的视觉反馈",
     "author":"DamageIndicator Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/damage", "desc": "查看伤害指示器" }
-    ],
-    "usage": "### DamageIndicator 使用指南\n\nDamageIndicator 是一个提供玩家受到伤害时视觉反馈的插件。\n\n#### 💥 伤害指示器相关\n- 使用 `/damage` 可以查看伤害指示器"
+    "path": "docs/plugins/damageindicator.md"
   },
   {
     "id":"InteractionVisualizer",
@@ -103,10 +77,7 @@
     "description":"交互可视化插件，提供玩家交互时的视觉反馈",
     "author":"InteractionVisualizer Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/visualize", "desc": "查看交互可视化" }
-    ],
-    "usage": "### InteractionVisualizer 使用指南\n\nInteractionVisualizer 是一个提供玩家交互时视觉反馈的插件。\n\n#### 👀 交互可视化相关\n- 使用 `/visualize` 可以查看交互可视化"
+    "path": "docs/plugins/interactionvisualizer.md"
   },
   {
     "id":"Betterview",
@@ -116,11 +87,7 @@
     "description":"更好的视角插件，提供更佳的视觉体验",
     "author":"Betterview Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/betterview", "desc": "查看更好的视角" }
-    ],
-    "usage": "### Betterview 使用指南\n\nBetterview 是一个提供更好视觉体验的插件。\n\n#### 🔭 更好的视角相关\n- 使用 `/betterview` 可以查看更好的视角"
-
+    "path": "docs/plugins/betterview.md"
   },
   {
     "id":"JustFleshToLeather",
@@ -130,11 +97,7 @@
     "description":"将生肉转换为皮革的插件",
     "author":"JustFleshToLeather Team",
     "category":"玩法",
-    "commands": [
-      { "cmd": "/fleshtoleather", "desc": "转换生肉为皮革" }
-    ],
-    "usage": "### JustFleshToLeather 使用指南\n\nJustFleshToLeather 是一个将生肉转换为皮革的插件。\n\n#### 🥩 转换相关\n- 使用 `/fleshtoleather` 可以将生肉转换为皮革"
-
+    "path": "docs/plugins/justfleshtoleather.md"
   },
   {
     "id":"CommandAPI",
@@ -144,11 +107,6 @@
     "description":"命令API插件，提供自定义命令的功能",
     "author":"CommandAPI Team",
     "category":"开发工具",
-    "commands": [
-      { "cmd": "/commandapi", "desc": "查看CommandAPI帮助" }
-    ],
-    "usage": "### CommandAPI 使用指南\n\nCommandAPI 是一个提供自定义命令功能的插件。\n\n#### 📜 命令相关\n- 使用 `/commandapi` 可以查看CommandAPI帮助"
+    "path": "docs/plugins/commandapi.md"
   }
-
-
 ]

@@ -1,12 +1,11 @@
 // ===================== 首页 - 全屏卡片堆叠覆盖 =====================
 function renderHome() {
   const container = document.getElementById('home-content');
-  if (container.dataset.rendered) return;
-  container.dataset.rendered = 'true';
-
+  
   const cfg = App.config;
   const galleryItems = (App.gallery || []).slice(0, 6);
 
+  // 每次进入首页都重新初始化
   container.innerHTML = `
     <!-- 全屏堆叠容器 -->
     <div class="stack-wrap" id="stack-wrap">

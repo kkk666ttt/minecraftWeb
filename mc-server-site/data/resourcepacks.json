@@ -1,0 +1,57 @@
+[
+  {
+    "id": "rp-vanilla-tweaks",
+    "name": "Vanilla Tweaks",
+    "icon": "🎨",
+    "version": "1.21.4",
+    "description": "原版改进资源包，优化视觉体验的同时保持原版风格",
+    "author": "Vanilla Tweaks Team",
+    "category": "美化优化",
+    "path": "docs/resourcepacks/vanilla-tweaks.md",
+    "features": ["自定义3D模型", "视觉优化", "GUI美化"]
+  },
+  {
+    "id": "rp-xray-ultra",
+    "name": "Xray Ultra",
+    "icon": "🕶️",
+    "version": "2.0.0",
+    "description": "Xray 材质包（仅供单机/创造模式测试使用）",
+    "author": "Xray Team",
+    "category": "辅助工具",
+    "path": "docs/resourcepacks/xray-ultra.md",
+    "features": ["透视矿石", "高亮实体", "洞穴高亮"]
+  },
+  {
+    "id": "rp-faithful",
+    "name": "Faithful 32x",
+    "icon": "🖌️",
+    "version": "1.21.4",
+    "description": "经典高分辨率材质包，保留原版风格的 32x 像素提升",
+    "author": "Faithful Team",
+    "category": "美化优化",
+    "path": "docs/resourcepacks/faithful-32x.md",
+    "features": ["32x分辨率", "原版风格保留", "持续更新"]
+  },
+  {
+    "id": "rp-bare-bones",
+    "name": "Bare Bones",
+    "icon": "🧩",
+    "version": "1.21.4",
+    "description": "极简风格资源包，扁平化设计突出游戏性",
+    "author": "Bare Bones Team",
+    "category": "美化优化",
+    "path": "docs/resourcepacks/bare-bones.md",
+    "features": ["扁平化设计", "极简风格", "低配友好"]
+  },
+  {
+    "id": "rp-stay-true",
+    "name": "Stay True",
+    "icon": "🌿",
+    "version": "1.21.4",
+    "description": "保留原版精神的优化资源包，让世界更加生动",
+    "author": "Stay True Team",
+    "category": "美化优化",
+    "path": "docs/resourcepacks/stay-true.md",
+    "features": ["色彩增强", "连接纹理", "细节优化"]
+  }
+]

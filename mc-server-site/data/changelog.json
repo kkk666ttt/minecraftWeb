@@ -5,7 +5,7 @@
     "date": "2026-04-27",
     "type": "major",
     "title": "🎉 DreamCraft 服务器正式开服",
-    "content": "DreamCraft 服务器正式对外开放！\n\n**新增内容：**\n- 基于 Paper 1.21.4 的纯净生存体验\n- mcMMO RPG技能系统\n- Slimefun 科技拓展\n- 完善的经济系统\n- 领地保护系统\n- 服务器网站同步上线",
+    "path": "docs/changelog/v1.0.0.md",
     "author": "DreamMaster"
   },
   {
@@ -14,7 +14,7 @@
     "date": "2026-04-25",
     "type": "minor",
     "title": "🛒 新增玩家商店街区",
-    "content": "主城新增玩家商店街区，使用 /shop rent 即可租用摊位。\n\n**优化：**\n- 优化服务器 TPS 表现\n- 修复若干权限问题\n- 调整经济系统平衡性",
+    "path": "docs/changelog/v1.1.0.md",
     "author": "DreamMaster"
   },
   {
@@ -23,7 +23,7 @@
     "date": "2026-04-20",
     "type": "minor",
     "title": "🎯 小游戏赛场开放",
-    "content": "服务器新建 PVP 小游戏场地！\n\n**新增：**\n- PVP 竞技场（支持多人对战）\n- 每周六晚举办比赛\n- 新增排行榜系统",
+    "path": "docs/changelog/v1.2.0.md",
     "author": "管理员"
   },
   {
@@ -32,7 +32,7 @@
     "date": "2026-04-15",
     "type": "major",
     "title": "🌐 服务器网站全新改版",
-    "content": "服务器网站全面升级！\n\n**网站更新：**\n- 全新暗色主题 UI\n- 活动通知系统\n- 游戏相册画廊\n- 插件文档中心\n- 服务器数据备份功能",
+    "path": "docs/changelog/v1.3.0.md",
     "author": "DreamMaster"
   },
   {
@@ -41,7 +41,7 @@
     "date": "2026-04-10",
     "type": "patch",
     "title": "🐛 修复与优化",
-    "content": "**修复：**\n- 修复领地插件权限异常\n- 修复商店价格显示问题\n\n**优化：**\n- 调整怪物刷新率\n- 优化主城保护区域",
+    "path": "docs/changelog/v1.3.1.md",
     "author": "管理员"
   }
 ]

@@ -1,0 +1,8 @@
+[
+  { "category": "基础指令", "icon": "⚡", "path": "docs/commands/basic.md" },
+  { "category": "领地管理", "icon": "🛡️", "path": "docs/commands/claim.md" },
+  { "category": "家庭系统", "icon": "🏠", "path": "docs/commands/home.md" },
+  { "category": "经济系统", "icon": "💰", "path": "docs/commands/economy.md" },
+  { "category": "社交功能", "icon": "💬", "path": "docs/commands/social.md" },
+  { "category": "玩法相关", "icon": "🎮", "path": "docs/commands/gameplay.md" }
+]

@@ -17,6 +17,8 @@
   "navigation": [
     { "id": "home", "label": "🏠 首页", "icon": "home" },
     { "id": "plugins", "label": "🔌 插件列表", "icon": "puzzle" },
+    { "id": "commands", "label": "📖 指令大全", "icon": "book" },
+    { "id": "resourcepacks", "label": "🎨 资源包", "icon": "image" },
     { "id": "docs", "label": "📚 服务器文档", "icon": "book" },
     { "id": "activities", "label": "📢 活动通知", "icon": "megaphone" },
     { "id": "qq-group", "label": "💬 交流Q群", "icon": "chat" },

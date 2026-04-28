@@ -41,7 +41,13 @@ function gvApplyTransform() {
   const { img } = gvEls();
   if (!img) return;
   gvClampPan();
-  img.style.transform = `translate(${GViewerState.x}px, ${GViewerState.y}px) scale(${GViewerState.scale})`;
+  if (GViewerState.scale <= 1) {
+    GViewerState.x = 0;
+    GViewerState.y = 0;
+    img.style.transform = '';
+  } else {
+    img.style.transform = 'translate(' + GViewerState.x + 'px, ' + GViewerState.y + 'px) scale(' + GViewerState.scale + ')';
+  }
   img.style.cursor = GViewerState.scale > 1 ? (GViewerState.dragging ? 'grabbing' : 'grab') : 'zoom-in';
   img.classList.toggle('is-dragging', GViewerState.dragging);
 }
