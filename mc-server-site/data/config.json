@@ -1,18 +1,17 @@
 {
-  "name": "DreamCraft 服务器",
+  "name": "BANANA 服务器",
   "version": "1.0.0",
   "mcVersion": "1.21.11",
   "serverType": "Paper",
-  "serverIp": "play.dreamcraft.com",
+  "serverIp": "******none******",
   "serverIpHidden": true,
-  "accessPassword": "admin123",
-  "qqGroup": "123456789",
-  "qqGroupLink": "https://qm.qq.com/q/example",
+  "accessPassword": "DynamicX",
+  "qqGroup": "416710832",
+  "qqGroupLink": "https://qun.qq.com/universal-share/share?ac=1&authKey=2%2FKbLV4G%2FPDxhuYnlpkldtUlYAPnCWMwoQFVxUc1L8Kmd%2BGPcdqJfBwWWy1p%2FtUK&busi_data=eyJncm91cENvZGUiOiI0MTY3MTA4MzIiLCJ0b2tlbiI6IkRkTUxKMVpaRE9UckhqUml5aWt4WTYxQXVHblZxMnAvckQzSW01a0dZVHlJZUdFcDBRd3FQUnJVUlBNT2M3bjAiLCJ1aW4iOiIzODIzOTk0NzM1In0%3D&data=dxM33YC7wUw3BPpFsRZelxvm2Q-0F6JWscW01SvG6Reo8H-lJ3a0bNxWIhJpEdi4lL8e9ureNh1tGdJDaoS_CA&svctype=4&tempid=h5_group_info",
   "features": [
     "纯净原版生存体验",
-    "完善的商店经济",
     "领地保护系统",
-    "可tpa的好友系统",
+    "可随时tp的功能",
     "8~24时稳定运行"
   ],
   "navigation": [
@@ -23,6 +22,6 @@
     { "id": "qq-group", "label": "💬 交流Q群", "icon": "chat" },
     { "id": "changelog", "label": "📋 更新日志", "icon": "list" },
     { "id": "gallery", "label": "📸 游戏画廊", "icon": "image" },
-    { "id": "about", "label": "💖 关于/想说的话", "icon": "heart" }
+    { "id": "about", "label": "💖 腐竹的话", "icon": "heart" }
   ]
 }

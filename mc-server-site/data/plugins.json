@@ -1,136 +1,154 @@
 [
   {
-    "id": "essentialsx",
-    "name": "EssentialsX",
-    "icon": "🛠️",
-    "version": "2.20.1",
-    "description": "服务器基础功能插件，提供传送、家、经济等核心功能",
-    "author": "EssentialsX Team",
-    "category": "核心",
+    "id":"LightUP",
+    "name":"LightUP",
+    "icon":"💡",
+    "version":"1.1.6",
+    "description":"照明插件，提供各种照明效果和功能",
+    "author":"LightUP Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/spawn", "desc": "回到主城出生点" },
-      { "cmd": "/sethome", "desc": "设置家的位置" },
+      { "cmd": "/lightup", "desc": "基础点亮" },
+      { "cmd": "/lightup undo", "desc": "撤销上一次操作" },
+      { "cmd": "/lightup cancel", "desc": "停止当前点亮" },
+      { "cmd": "/lightup reload", "desc": "(管理员)重载配置" }
+    ],
+    "usage": "### LightUP 使用指南\n\n https://hangar.papermc.io/LOOHP/LightUp \n\nLightUP 是一个提供各种照明效果和功能的插件。\n\n [管理员]需要安装的API：CommandAPI 11.2.0 \n\n 下载链接：[https://cdn.modrinth.com/data/ExxvCi0y/versions/wtbh8UEY/CommandAPI-11.2.0-Paper.jar]"
+  },
+  {
+    "id":"HuskHomes",
+    "name":"HuskHomes",
+    "icon":"🏠",
+    "version":"2.0.0",
+    "description":"家庭系统插件，提供设置和管理家庭的功能",
+    "author":"HuskHomes Team",
+    "category":"玩法",
+    "commands": [
       { "cmd": "/home", "desc": "传送到家" },
-      { "cmd": "/tpa <玩家名>", "desc": "请求传送至指定玩家" },
-      { "cmd": "/tpaccept", "desc": "接受传送请求" },
-      { "cmd": "/tpahere <玩家名>", "desc": "请求让玩家传送至你" },
-      { "cmd": "/back", "desc": "返回上一次传送/死亡位置" },
-      { "cmd": "/kit", "desc": "领取新手礼包" },
-      { "cmd": "/pay <玩家名> <金额>", "desc": "给指定玩家转账" },
-      { "cmd": "/balance", "desc": "查看余额" },
-      { "cmd": "/warp <名称>", "desc": "传送到公共传送点" },
-      { "cmd": "/msg <玩家名> <消息>", "desc": "私聊指定玩家" }
+      { "cmd": "/sethome", "desc": "设置家的位置" },
+      { "cmd": "/delhome", "desc": "删除家" }
     ],
-    "usage": "### EssentialsX 使用指南\n\nEssentialsX 是服务器的核心基础插件，提供了非常多的实用功能。\n\n#### 📍 传送相关\n- 使用 `/spawn` 可以回到主城出生点\n- 使用 `/sethome` 设置你自己的家（最多可设置多个家）\n- 使用 `/home [名称]` 传送到设置的家\n- 使用 `/tpa <玩家>` 请求传送到某个玩家身边\n- 使用 `/back` 返回死亡或上次传送的位置\n\n#### 💰 经济系统\n- 服务器货币可通过挖矿、击杀怪物、出售物品获得\n- 使用 `/balance` 查看当前余额\n- 使用 `/pay <玩家> <金额>` 向其他玩家转账\n- 使用 `/balancetop` 查看富豪榜\n\n#### 🎁 礼包系统\n- 输入 `/kit` 查看可领取的礼包\n- 新玩家可领取 `新手礼包`，内含基础装备\n- 不同身份组有不同的专属礼包"
+    "usage": "### HuskHomes 使用指南\n\nHuskHomes 是一个提供家庭系统功能的插件。\n\n#### 🏠 家庭相关\n- 使用 `/sethome` 设置你自己的家（最多可设置多个家）\n- 使用 `/home [名称]` 传送到设置的家\n- 使用 `/delhome [名称]` 删除指定的家"
   },
   {
-    "id": "luckperms",
-    "name": "LuckPerms",
-    "icon": "🔑",
-    "version": "5.4.7",
-    "description": "权限管理插件，管理用户组和权限分配",
-    "author": "Luck",
-    "category": "管理",
+    "id":"GSit",
+    "name":"GSit",
+    "icon":"🪑",
+    "version":"1.0.0",
+    "description":"坐下插件，提供玩家坐下功能",
+    "author":"GSit Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/lp user <玩家> group set <组>", "desc": "设置玩家的权限组" },
-      { "cmd": "/lp user <玩家> permission set <权限>", "desc": "给玩家设置特定权限" },
-      { "cmd": "/lp group <组> info", "desc": "查看权限组信息" },
-      { "cmd": "/lp sync", "desc": "同步权限配置" }
+      { "cmd": "/sit", "desc": "坐下" }
     ],
-    "usage": "### LuckPerms 使用指南\n\nLuckPerms 是服务器的权限管理插件，用于管理玩家的权限和身份组。\n\n#### 🏷️ 身份组等级\n- **新人** - 默认身份组，新玩家自动获得\n- **成员** - 游戏时间超过48小时的玩家\n- **资深** - 等级达到500级的玩家\n- **精英** - 等级达到1000级的玩家\n- **传奇** - 等级达到1200级的玩家\n- **管理员** - 服务器管理团队\n\n#### 🔧 管理员指令\n- 使用 `/lp user <玩家> group set <组>` 更改玩家的身份组\n- 使用 `/lp sync` 在修改配置文件后同步权限\n- 使用 `/lp user <玩家> permission info` 查看玩家的权限列表\n\n> 注意：普通玩家无需直接操作此插件"
+    "usage": "### GSit 使用指南\n\nGSit 是一个提供玩家坐下功能的插件。\n\n#### 🪑 坐下相关\n- 使用 `/sit` 可以坐下"
   },
   {
-    "id": "mcmmo",
-    "name": "mcMMO",
-    "icon": "⚔️",
-    "version": "2.1.246",
-    "description": "RPG技能插件，让玩家通过使用工具和武器来提升各项技能等级",
-    "author": "Nossr50",
-    "category": "玩法",
+    "id":"voicechat",
+    "name":"VoiceChat",
+    "icon":"🎤",
+    "version":"1.0.0",
+    "description":"语音聊天插件，提供玩家语音交流功能",
+    "author":"VoiceChat Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/mcstats", "desc": "查看个人所有技能等级" },
-      { "cmd": "/mcrank", "desc": "查看技能排名" },
-      { "cmd": "/mctop", "desc": "查看各技能排行榜" },
-      { "cmd": "/skill <技能名>", "desc": "查看某技能的详细信息" },
-      { "cmd": "/xprate", "desc": "查看当前经验倍率" }
+      { "cmd": "/voicechat", "desc": "打开语音聊天界面" }
     ],
-    "usage": "### mcMMO 使用指南\n\nmcMMO 是服务器的RPG技能插件，让原版的游戏行为也能获得经验并升级！\n\n#### ⚡ 技能列表\n\n| 技能名称 | 类型 | 如何升级 |\n|---------|------|---------|\n| 挖掘 | ⛏️ | 挖掘各种方块 |\n| 伐木 | 🌲 | 砍伐树木 |\n| 采集 | 🌾 | 锄地、种植 |\n| 剑术 | ⚔️ | 用剑战斗 |\n| 箭术 | 🏹 | 用弓射箭 |\n| 防御 | 🛡️ | 承受伤害 |\n| 钓鱼 | 🎣 | 钓鱼 |\n| 采药 | 🌿 | 采集特定物品 |\n\n#### 💡 小贴士\n- 使用 `/mcstats` 查看所有技能等级\n- 技能等级越高，触发特殊能力的概率越大\n- 每周有经验加成双倍日！"
+    "usage": "### VoiceChat 使用指南\n\nVoiceChat 是一个提供玩家语音交流功能的插件。\n\n#### 🎤 语音聊天相关\n- 使用 `/voicechat` 可以打开语音聊天界面"
   },
   {
-    "id": "gravestone",
-    "name": "Gravestone",
-    "icon": "🪦",
-    "version": "1.3.0",
-    "description": "死亡墓碑插件，死亡后生成墓碑保护物品不掉落",
-    "author": "Phoenix616",
-    "category": "生存",
+    "id":"OnePlayerSleep",
+    "name":"OnePlayerSleep",
+    "icon":"🛏️",
+    "version":"1.0.0",
+    "description":"单个玩家睡觉插件，提供玩家睡觉功能",
+    "author":"OnePlayerSleep Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/gravestone", "desc": "查看墓碑相关信息" },
-      { "cmd": "/gravestone list", "desc": "列出你的所有墓碑位置" }
+      { "cmd": "/sleep", "desc": "睡觉" }
     ],
-    "usage": "### Gravestone 使用指南\n\nGravestone（墓碑）插件让死亡不再那么痛苦！\n\n#### ⚰️ 墓碑机制\n- 当你死亡时，会生成一个带有你名字的墓碑\n- 你的所有物品会被安全存放在墓碑中\n- **60分钟内** 回到墓碑处右击即可取回物品\n- 超过60分钟，墓碑会消失，物品会掉落在地上\n\n#### 🔔 提示\n- 死亡后聊天栏会显示墓碑的坐标\n- 可以输入 `/gravestone list` 查看所有墓碑位置\n- 建议尽快去取回物品哦！"
+    "usage": "### OnePlayerSleep 使用指南\n\nOnePlayerSleep 是一个提供玩家睡觉功能的插件。\n\n#### 🛏️ 睡觉相关\n- 使用 `/sleep` 可以睡觉"
   },
   {
-    "id": "coreprotect",
-    "name": "CoreProtect",
-    "icon": "📜",
-    "version": "22.3",
-    "description": "方块日志和回滚插件，记录玩家所有操作行为",
-    "author": "Intuitive",
-    "category": "管理",
+    "id":"AxGraves",
+    "name":"AxGraves",
+    "icon":"⚰️",
+    "version":"1.0.0",
+    "description":"墓碑插件，提供玩家死亡后生成墓碑的功能",
+    "author":"AxGraves Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/co inspect", "desc": "开启/关闭检查模式" },
-      { "cmd": "/co lookup", "desc": "查询方块操作记录" },
-      { "cmd": "/co rollback", "desc": "回滚指定玩家的操作" }
+      { "cmd": "/graves", "desc": "查看墓碑" }
     ],
-    "usage": "### CoreProtect 使用指南\n\nCoreProtect 是方块行为记录插件，用于防止熊孩子破坏服务器。\n\n#### 🔍 查询操作\n1. 输入 `/co inspect` 进入检查模式\n2. 左键点击方块查看谁放置的\n3. 右键点击方块查看谁破坏的\n4. 再次输入 `/co inspect` 退出检查模式\n\n#### 🛡️ 防熊机制\n- 每个方块的放置/破坏都会被记录\n- 管理员可以随时查询和回滚破坏行为\n- 支持查询箱子物品存取记录\n\n> 温馨提示：请不要破坏他人的建筑，服务器有完善的记录系统！"
+    "usage": "### AxGraves 使用指南\n\nAxGraves 是一个提供玩家死亡后生成墓碑功能的插件。\n\n#### ⚰️ 墓碑相关\n- 玩家死亡后会在死亡地点生成一个墓碑，里面存放玩家的物品\n- 使用 `/graves` 可以查看附近的墓碑"
   },
   {
-    "id": "shopguiplus",
-    "name": "ShopGUIPlus",
-    "icon": "🏪",
-    "version": "3.2.0",
-    "description": "GUI商店插件，提供便捷的物品买卖界面",
-    "author": "Brordb",
-    "category": "经济",
+    "id":"DamageIndicator",
+    "name":"DamageIndicator",
+    "icon":"💥",
+    "version":"1.0.0",
+    "description":"伤害指示器插件，提供玩家受到伤害时的视觉反馈",
+    "author":"DamageIndicator Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/shop", "desc": "打开商店GUI界面" },
-      { "cmd": "/shop sell", "desc": "快速出售物品" },
-      { "cmd": "/shop prices", "desc": "查看物品价格表" }
+      { "cmd": "/damage", "desc": "查看伤害指示器" }
     ],
-    "usage": "### ShopGUIPlus 使用指南\n\nShopGUIPlus 提供了方便的图形界面商店！\n\n#### 🛒 购物指南\n1. 输入 `/shop` 或右键点击村民打开商店\n2. 左侧分类菜单选择物品类别\n3. 左键点击物品购买，右键点击出售\n4. 支持批量购买（Shift+点击 = 一组）\n\n#### 💎 常用物品价格\n| 物品 | 收购价 | 出售价 |\n|-----|-------|------|\n| 钻石 | 64 💰 | 80 💰 |\n| 铁锭 | 8 💰 | 12 💰 |\n| 金锭 | 16 💰 | 24 💰 |\n| 绿宝石 | 10 💰 | 15 💰 |\n\n> 价格会随市场波动，以游戏内为准"
+    "usage": "### DamageIndicator 使用指南\n\nDamageIndicator 是一个提供玩家受到伤害时视觉反馈的插件。\n\n#### 💥 伤害指示器相关\n- 使用 `/damage` 可以查看伤害指示器"
   },
   {
-    "id": "slimefun",
-    "name": "Slimefun",
-    "icon": "🧪",
-    "version": "2.4.0",
-    "description": "科技模组插件，添加了大量机器、武器、工具和魔法物品",
-    "author": "TheBusyBiscuit",
-    "category": "玩法",
+    "id":"InteractionVisualizer",
+    "name":"InteractionVisualizer",
+    "icon":"👀",
+    "version":"1.0.0",
+    "description":"交互可视化插件，提供玩家交互时的视觉反馈",
+    "author":"InteractionVisualizer Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "/sf guide", "desc": "打开Slimefun指南" },
-      { "cmd": "/sf research", "desc": "查看已解锁的研究" },
-      { "cmd": "/sf stats", "desc": "查看Slimefun统计数据" }
+      { "cmd": "/visualize", "desc": "查看交互可视化" }
     ],
-    "usage": "### Slimefun 使用指南\n\nSlimefun 是一个大型科技拓展插件，无需安装模组！\n\n#### 🔬 入门指南\n1. 输入 `/sf guide` 打开Slimefun指南书\n2. 从基础机器开始研究，逐步解锁更高级的科技\n3. 研究需要消耗经验等级\n\n#### ⚙️ 主要分支\n- **基础机器** - 电力发电机、磨粉机等\n- **武器** - 爆炸弓、冰冻魔杖等\n- **工具** - 鄂式粉碎机、魔法工作台等\n- **食物** - 自动烹饪机、金苹果等\n- **魔法** - 法杖、魔法书等\n\n#### 💡 提示\n- 右键机器可查看使用说明\n- 新手建议从 \"基础机器\" 分支开始研究\n- 部分高级机器需要搭建多方块结构"
+    "usage": "### InteractionVisualizer 使用指南\n\nInteractionVisualizer 是一个提供玩家交互时视觉反馈的插件。\n\n#### 👀 交互可视化相关\n- 使用 `/visualize` 可以查看交互可视化"
   },
   {
-    "id": "worldedit",
-    "name": "WorldEdit",
-    "icon": "🌍",
-    "version": "7.3.0",
-    "description": "创世神插件，提供大规模地形编辑功能",
-    "author": "EngineHub",
-    "category": "管理",
+    "id":"Betterview",
+    "name":"Betterview",
+    "icon":"🔭",
+    "version":"1.0.0",
+    "description":"更好的视角插件，提供更佳的视觉体验",
+    "author":"Betterview Team",
+    "category":"玩法",
     "commands": [
-      { "cmd": "//wand", "desc": "获取编辑魔杖（木斧）" },
-      { "cmd": "//set <方块>", "desc": "将选区填充为指定方块" },
-      { "cmd": "//replace <旧> <新>", "desc": "替换选区中的方块" },
-      { "cmd": "//copy", "desc": "复制选区" },
-      { "cmd": "//paste", "desc": "粘贴剪贴板内容" },
-      { "cmd": "//undo", "desc": "撤销上一次操作" }
+      { "cmd": "/betterview", "desc": "查看更好的视角" }
     ],
-    "usage": "### WorldEdit 使用指南\n\nWorldEdit（创世神）是强大的地形编辑工具，仅限管理员使用。\n\n#### 🎮 基本操作\n1. 输入 `//wand` 获取木斧\n2. **左键** 点击选择第一个点\n3. **右键** 点击选择第二个点\n4. 使用命令对选区进行操作\n\n#### 🛠️ 常用命令\n- `//set stone` - 将选区填充为石头\n- `//replace grass dirt` - 把草方块替换为泥土\n- `//copy` + `//paste` - 复制粘贴建筑\n- `//undo` - 撤销操作（不小心搞砸了必备）\n\n> ⚠️ 注意：请谨慎使用，大范围操作可能造成卡顿"
+    "usage": "### Betterview 使用指南\n\nBetterview 是一个提供更好视觉体验的插件。\n\n#### 🔭 更好的视角相关\n- 使用 `/betterview` 可以查看更好的视角"
+
+  },
+  {
+    "id":"JustFleshToLeather",
+    "name":"JustFleshToLeather",
+    "icon":"🥩",
+    "version":"1.0.0",
+    "description":"将生肉转换为皮革的插件",
+    "author":"JustFleshToLeather Team",
+    "category":"玩法",
+    "commands": [
+      { "cmd": "/fleshtoleather", "desc": "转换生肉为皮革" }
+    ],
+    "usage": "### JustFleshToLeather 使用指南\n\nJustFleshToLeather 是一个将生肉转换为皮革的插件。\n\n#### 🥩 转换相关\n- 使用 `/fleshtoleather` 可以将生肉转换为皮革"
+
+  },
+  {
+    "id":"CommandAPI",
+    "name":"CommandAPI",
+    "icon":"📜",
+    "version":"1.0.0",
+    "description":"命令API插件，提供自定义命令的功能",
+    "author":"CommandAPI Team",
+    "category":"开发工具",
+    "commands": [
+      { "cmd": "/commandapi", "desc": "查看CommandAPI帮助" }
+    ],
+    "usage": "### CommandAPI 使用指南\n\nCommandAPI 是一个提供自定义命令功能的插件。\n\n#### 📜 命令相关\n- 使用 `/commandapi` 可以查看CommandAPI帮助"
   }
+
+
 ]

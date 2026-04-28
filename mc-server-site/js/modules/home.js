@@ -22,7 +22,7 @@ function renderHome() {
           <div class="stack-hero-mask"></div>
           <div class="stack-hero-grid"></div>
           <div class="stack-hero-body">
-            <div class="stack-badge">DreamCraft 服务器</div>
+            <div class="stack-badge">BANANA 服务器</div>
             <h1 class="stack-title">欢迎来到<br><span class="stack-gold">${cfg.name}</span></h1>
             <p class="stack-sub">一个纯净、公平、有温度的 Minecraft 社区</p>
             <div class="stack-actions">
@@ -59,7 +59,7 @@ function renderHome() {
                 <div class="stack-card-body">
                   <div class="stack-card-e">🎮</div>
                   <h3>${f}</h3>
-                  <p>在 DreamCraft 体验最纯粹的 ${f}</p>
+                  <p>在 BANANA 体验最纯粹的 ${f}</p>
                 </div>
               </div>
             `).join('')}
@@ -73,7 +73,7 @@ function renderHome() {
           <div class="stack-section-head">
             <span class="stack-badge">画廊</span>
             <h2 class="stack-section-title">玩家风采 & 世界风景</h2>
-            <p>记录 DreamCraft 世界的每一个精彩瞬间</p>
+            <p>记录 BANANA 世界的每一个精彩瞬间</p>
           </div>
           <div class="stack-card-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">
             ${galleryItems.map((g, i) => `
