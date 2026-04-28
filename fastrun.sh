@@ -9,11 +9,20 @@
 fuser -k 80/tcp 2>/dev/null
 sleep 1
 
-# 进入项目目录并启动
+# 本地测试进入项目目录并启动
 cd ~/web/minecraftWeb/mc-server-site
-python3 -m http.server 80 --bind 127.0.0.1
+python3 -m http.server 8080 --bind 127.0.0.1
 
 # Nginx
 # 看 mc-server-site/README.md
 
+# 更新内容
+# cd ~/web/minecraftWeb/
+# git pull
 
+
+# sudo systemctl status nginx     # 查看 Nginx 运行状态
+# sudo systemctl reload nginx     # 重载配置（不改端口时用这个）
+# sudo systemctl restart nginx    # 重启 Nginx
+# sudo nginx -t                   # 测试配置语法
+# sudo tail -30 /var/log/nginx/error.log   # 看错误日志
