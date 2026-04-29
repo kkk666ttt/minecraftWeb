@@ -108,5 +108,15 @@
     "author":"CommandAPI Team",
     "category":"开发工具",
     "path": "docs/plugins/commandapi.md"
+  },
+  {
+    "id":"DoubleJump",
+    "name":"DoubleJump",
+    "icon":"🦘",
+    "version":"1.0.0",
+    "description":"双跳插件，提供玩家双跳功能",
+    "author":"DoubleJump Team",
+    "category":"玩法",
+    "path": "docs/plugins/doublejump.md"
   }
 ]
