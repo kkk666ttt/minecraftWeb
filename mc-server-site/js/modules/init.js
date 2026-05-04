@@ -145,6 +145,7 @@ async function init() {
   }
 
   initNavigation();
+  updateSiteBranding();
 
   setTimeout(function() {
     navigateTo('home');
@@ -157,6 +158,36 @@ function showRulesIfNeeded() {
   try { if (localStorage.getItem('rulesAccepted') === 'true') return; } catch(e) {}
   var modal = document.getElementById('rules-modal');
   if (modal) modal.classList.add('show');
+}
+
+// ===================== 全局品牌标识动态更新 =====================
+function updateSiteBranding() {
+  if (!App.config || !App.config.name) return;
+  const name = App.config.name;
+
+  // 1. 浏览器标题栏
+  document.title = name;
+
+  // 2. 侧边栏 Logo/标题
+  const brandTitle = document.querySelector('.sidebar-header h1');
+  if (brandTitle) brandTitle.textContent = name;
+
+  // 3. 首页大标题 (在 renderHome 也会处理，这里先处理 HTML 原有的)
+  const homeTitle = document.querySelector('.home-hero h1');
+  if (homeTitle) homeTitle.textContent = name;
+
+  // 4. 页脚版权信息
+  const footerCopyright = document.querySelector('.main-footer div');
+  if (footerCopyright) {
+    const year = new Date().getFullYear();
+    footerCopyright.textContent = `© ${year} ${name.replace(' 服务器', '')}. All rights reserved.`;
+  }
+
+  // 5. 弹窗内的描述
+  const rulesDesc = document.querySelector('#rules-modal p');
+  if (rulesDesc && rulesDesc.textContent.includes('BANANA')) {
+    rulesDesc.textContent = rulesDesc.textContent.replace(/BANANA/g, name.replace(' 服务器', ''));
+  }
 }
 
 function acceptRules() {

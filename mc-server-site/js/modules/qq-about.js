@@ -9,7 +9,7 @@ function renderQQGroup() {
     <div class="qq-group-section">
       <div class="qq-group-card">
         <div class="qq-icon">💬</div>
-        <h3>DreamCraft 玩家交流群</h3>
+        <h3>${App.config.name} 玩家交流群</h3>
         <p>群内可讨论游戏技巧、组队冒险、反馈问题、闲聊交友</p>
         <div class="qq-number">${App.config.qqGroup}</div>
         <div style="display:flex;gap:12px;justify-content:center;">
